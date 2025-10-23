@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Форма реєстрації користувача" />
+    <meta name="author" content="Студент" />
+    <title>Реєстрація користувача | Практикум</title>
+    <!-- Підключення зовнішнього CSS-файлу -->
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <h1>Реєстрація користувача</h1>
+        <!-- Навігація за потреби -->
+    </header>
+
+    <main>
+        <section aria-labelledby="registration-title">
+            <h2 id="registration-title">Форма реєстрації</h2>
+
+            <!-- Базова, семантична та доступна HTML-форма -->
+            <form id="registrationForm" class="registration-form" action="/submit" method="POST" novalidate>
+                <!-- Ім''-->
+                <div class="form-group">
+                    <label for="firstName">Ім'я</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Іван" autocomplete="given-name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Прізвище</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Петренко" autocomplete="family-name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" minlength="8" autocomplete="new-password" required />
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Відправити</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Практикум 1</p>
+    </footer>
+
+    <!-- Скрипти  -->
+    <script src="script.js"></script>
+</body>
+</html>
